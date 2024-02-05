@@ -1,0 +1,25 @@
+You can compile them with this command:
+
+gcc -Wall -std=c99 -D FIBONACCI -D REVERSE fibeverse.c reverse.c fibonacci.c -o fibeverse
+
+You can run the resulting program with two arguments: a number, then a string (in quotes):
+
+./fibeverse 6 'what a trip that was!'  8  was! that trip a what
+
+
+When you compile it with this command, it should compute the Fibonacci number but not reverse the second argument:
+
+gcc -Wall -std=c99 -D FIBONACCI fibeverse.c reverse.c fibonacci.c -o fibonacci
+
+Then you can run it like this:
+
+./fibonacci 8
+
+
+When you use this command, it should reverse the string you provide as the first argument, and not do any fibonacci calculation:
+
+gcc -Wall -std=c99 -D REVERSE fibeverse.c reverse.c fibonacci.c -o reverse
+
+Then you can run it like this:
+
+./reverse 'a brave new world'
